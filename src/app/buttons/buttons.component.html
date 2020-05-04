@@ -1,0 +1,10 @@
+
+<div class="row"> 
+    <h2>Discount Calculator</h2> 
+    <label for="box1">Input Cost</label> 
+    <input id="box1" [(ngModel)]="box1" type="text">
+    <label for="box2">Input Discount</label> 
+    <input id="box2" [(ngModel)]="box2" type="text">
+    <button class="btn btn-primary" (click)="result() " > Enter</button>
+    <h4>Total Discount: {{result() | currency}}</h4>
+</div>
